@@ -1,5 +1,27 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+#jumbotron {
+  background-color: lightgreen;
+}
+
+#portfolio {
+  height: 500px;
+  background-color: yellow;
+}
+
+.bg-lgrey {
+  background-color: lightgrey;
+}
+
+.bg-grey {
+  background-color: grey;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.banner-jambo {
+  width: 600px;
+  height: 400px;
+  margin: 50px auto;
+
 }
