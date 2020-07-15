@@ -3,6 +3,7 @@
 }
 
 #portfolio {
+  text-align: center;
   height: 500px;
   background-color: yellow;
 }
