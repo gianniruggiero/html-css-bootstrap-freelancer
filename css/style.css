@@ -1,28 +1,40 @@
 header {
   height: 100px;
+  background-color: #2c3e50;
+}
+
+footer {
+  /* background-color: #3a546d; */
+  height: 350px;
+}
+
+#menu-foot {
+  height: 250px;
+  background-color: #3a546d;
+}
+
+#menu-copy {
+  height: 100px;
+  background-color: #2c3e50;
 }
 
 
-.wrap-portfolio {
-  background-color: yellow;
-  width: 100%;
-  height: 100%;
-}
+/* MIX */
 
-#jumbotron {
-  background-color: lightgreen;
-}
-
-#portfolio {
+.txt-center {
   text-align: center;
-  background-color: yellow;
-  margin-bottom: 90px;
 }
 
+.txt-just {
+  text-align: justify;
+}
+
+.col_white {
+  color: #fff;
+}
 .bg-lgrey {
   background-color: lightgrey;
 }
-
 
 .bg-grey {
   background-color: grey;
@@ -31,6 +43,50 @@ header {
 .bg-green {
   background-color: green;
 }
+
+.wrap-portfolio {
+  background-color: lightgrey;
+  width: 100%;
+  height: 100%;
+}
+
+#portfolio {
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 60px;
+}
+
+.wrap-jumbo {
+  background-color: #1abc9c;
+  width: 100%;
+  height: 100%;
+}
+
+#jumbotron {
+  background-color: #1abc9c;
+}
+
+.wrap-about {
+  background-color: #1abc9c;
+  width: 100%;
+  height: 300px;
+}
+
+#about {
+  background-color: #1abc9c;
+}
+
+.wrap-contact {
+  background-color: #fff;
+  width: 100%;
+  height: 400px;
+}
+
+#contact {
+  background-color: #fff;
+}
+
+
 
 .banner-jambo {
   width: 600px;
@@ -41,7 +97,7 @@ header {
 .box-img {
   width: 100%;
   height: 200px;
-  background-color: red;
+  background-color: brown;
   display: inline-block;
   border-radius: 5px;
   margin-top: 30px;
