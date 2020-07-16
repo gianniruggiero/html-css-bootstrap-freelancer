@@ -14,38 +14,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
     <title>Start Bootstrap</title>
-    <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <!-- HEADER -->
     <header>
       <!-- /nav header top -->
-      <nav class="header_top">
+      <nav class="header_top pdl_10 pdr_10">
         <!-- container BOOTSTRAP -->
         <div class="container">
           <div class="row">
-            <div class="col-xs-9 col-sm-6 col-md-6 col_white"><a id="logo_start_bootstrap" href="#">START BOOTSTRAP</a></div>
-            <div class="col-xs-3 col-sm-6 col-md-6 text-right col_white">
+            <div class="col-xs-8 col-sm-6 col-md-6 col_white">
+              <a id="logo_start_bootstrap" href="#">START BOOTSTRAP</a>
+            </div>
+            <div class="col-xs-4 col-sm-6 col-md-6 text-right col_white">
               <!-- nav menu -->
               <nav class="visible-md visible-lg">
-                <ul class="ul-mainmenu list-unstyled list-inline">
+                <ul class="ul-mainmenu mb_0 list-unstyled list-inline">
                   <li><a class="col_white text-uppercase fs_menu pd_14" href="#">portfolio</a></li>
                   <li><a class="col_white text-uppercase fs_menu pd_14" href="#">about</a></li>
                   <li><a class="col_white text-uppercase fs_menu pd_14" href="#">contact</a></li>
                 </ul>
               </nav>
-              <!-- nav menu -->
+              <!-- /nav menu -->
               <!-- icona hamburger menu -->
-              <div class="visible-xs visible-sm">
-                <button type="button" class="btn bgc_green_jumbo">MENU
-                  <span class="glyphicon glyphicon-menu-hamburger"></span>
+              <div class="hamburger visible-xs visible-sm">
+                <button id="btn_menu" type="button" class="btn bgc_green_jumbo pd_14">MENU
+                  <span id="ico-hamburger"class="fs_11 glyphicon glyphicon-menu-hamburger"></span>
                 </button>
               </div>
-              <!-- icona hamburger menu -->
+              <!-- /icona hamburger menu -->
           </div>
+          <!-- /row     -->
         </div>
         <!-- container BOOTSTRAP -->
       </nav>
@@ -55,26 +58,21 @@
       <!-- wrap jumbotron -->
       <section class="wrap-jumbo">
         <!-- jumbotron -->
-        <div class:"container">
+        <!-- <div class:"container">
           <div class="row">
-            <div class="col-xs-12 text-center">
-              <div class="banner-jumbo">
-                <img id="jumbo_ico" src="img/avataaars.svg" alt="Avatar">
-                <h1 class="col_white">START BOOTSTRAP</h1>
-                <div class="jumbo-graph">
-                  <div class="linea_sx"></div>
+            <div class="col-xs-12 text-center"> -->
+              <div class="banner-jumbo pd_top_100 pd_btm_80">
+                <!-- immagine del banner-jumbo -->
+                <img id="jumbo_ico" class="mb_25" src="img/avataaars.svg" alt="Avatar">
+                <h1 class="font_title col_white">START BOOTSTRAP</h1>
+                <div class="jumbo_graph">
+                  <div class="linea_star"></div>
                   <span id="jumbo_star" class="col_white glyphicon glyphicon-star"></span>
-                  <div class="linea_dx"></div>
+                  <div class="linea_star"></div>
                 </div>
-                <h4 class="col_white">Graphic Artist - Web Designer - Illustrator</h4>
+                <h3 class="col_white">Graphic Artist - Web Designer - Illustrator</h3>
               </div>
-            </div>
-          </div>
-
-        </div>
-        <!-- /jumbotron -->
       </section>
-      <!-- /wrap jumbotron -->
 
     </header>
     <!-- /header -->
@@ -89,7 +87,7 @@
       <!-- wrap portfolio -->
       <section class="wrap-portfolio">
         <!-- container PORTFOLIO -->
-        <div id="portfolio p-top-80 p-btm-80" class="container">
+        <div id="portfolio p-top-80 pd-btm-80" class="container">
           <!-- row -->
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12"><h2 class="text-center">PORTFOLIO</h2></div>
@@ -127,7 +125,7 @@
       <!-- wrap about -->
       <section class="wrap-about">
         <!-- container bootstrap -->
-        <div id="about" class="wrapper_small p-top-80 p-btm-80">
+        <div id="about" class="wrapper_small p-top-80 pd-btm-80">
 
           <h2 class="text-center">ABOUT</h2>
 
