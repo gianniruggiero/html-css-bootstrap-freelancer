@@ -15,47 +15,76 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
-
-
-
   </head>
   <body>
 
-    <!-- header -->
+    <!-- HEADER -->
     <header>
-      <nav class="nav-main container">
-        <div class="row">
-          <div class="col-xs-6 col-sm-6 col-md-6 bg-lgrey"> <p>Start Bootstrap</p></div>
-          <div class="col-xs-6 col-sm-6 col-md-6 bg-grey"> <p>menu</p>
-              <!-- icona bars - visibile solo da tablet e mobile -->
-              <!-- <i class="fas fa-bars hamburger-icon"></i> -->
-              <!-- /icona bars - visibile solo da tablet e mobile -->
+      <!-- /nav header top -->
+      <nav class="header-top">
+        <!-- container BOOTSTRAP -->
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col_white">START BOOTSTRAP</div>
+            <div class="col-xs-6 col-sm-6 col-md-6 text-right col_white">
+              <!-- nav menu -->
+              <nav class="visible-md visible-lg">
+                <ul class="ul-mainmenu list-unstyled list-inline">
+                  <li>Portfolio</li>
+                  <li>About</li>
+                  <li>Contact</li>
+                </ul>
+              </nav>
+              <!-- nav menu -->
+              <!-- icona hamburger menu -->
+              <div class="visible-xs visible-sm">
+                <button type="button" class="btn btn-default">
+                  <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+              </div>
+              <!-- icona hamburger menu -->
+          </div>
         </div>
+        <!-- container BOOTSTRAP -->
       </nav>
+      <!-- /nav header top -->
+
+      <!-- JUMBOTRON -->
+      <!-- wrap jumbotron -->
+      <section class="wrap-jumbo">
+        <!-- jumbotron -->
+        <div id="jumbotron" class="container">
+
+          <div class="jumbo-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <!-- <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8">
+              <div class="banner-jambo bg-lgrey">BANNER</div>
+            </div>
+          </div> -->
+        </div>
+        <!-- /jumbotron -->
+      </section>
+      <!-- /wrap jumbotron -->
+
     </header>
+    <!-- /header -->
+
+
 
     <!-- main -->
     <main>
 
-      <div class="wrap-jumbo">
-        <!-- jumbotron -->
-        <div id="jumbotron" class="container">
-          <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8">
-              <div class="banner-jambo bg-lgrey">BANNER</div>
-            </div>
-          </div>
-        </div>
-        <!-- /jumbotron -->
-      </div>
+
 
       <!-- wrap portfolio -->
-      <div class="wrap-portfolio">
+      <section class="wrap-portfolio">
         <!-- container PORTFOLIO -->
-        <div id="portfolio" class="container">
+        <div id="portfolio p-top-80 p-btm-80" class="container">
           <!-- row -->
           <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 "><p>PORTFOLIO</p></div>
+            <div class="col-xs-12 col-sm-12 col-md-12"><h2 class="text-center">PORTFOLIO</h2></div>
 
             <div class="col-xs-12 col-sm-6 col-md-4">
               <div class="box-img"><h2>1</h2></div>
@@ -85,48 +114,77 @@
         </div>
         <!-- /container -->
       </div>
-      <!-- /wrap portfolio -->
+      <!-- /section PROTFOLIO -->
 
       <!-- wrap about -->
-      <div class="wrap-about txt-center">
+      <section class="wrap-about">
         <!-- container bootstrap -->
-        <div id="about" class="container">
-          <!-- row -->
-          <div class="row">
+        <div id="about" class="wrapper_small p-top-80 p-btm-80">
 
-            <div class="col-xs-12 col-sm-12 col-md-12"> <p>ABOUT</p>  </div>
+          <h2 class="text-center">ABOUT</h2>
 
-            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8">
-              <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                  <p class="txt-just">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 bg-lgrey">
-                  <p class="txt-just">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                <p class="txt-just">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 bg-lgrey">
+                <p class="txt-just">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
             </div>
 
-            <div class="col-xs-12 col-sm-12 col-md-12 ">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
               <!-- BOOTSTRAP - Standard button -->
               <button type="button" class="btn btn-default">Download</button>
             </div>
+
           </div>
           <!-- row -->
         </div>
         <!-- /container bootstrap -->
-      </div>
+      </section>
       <!-- /wrap about -->
 
       <!-- /wrap contact -->
       <div class="wrap-contact">
-        <div id="contact" class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-              <p>CONTACT ME</p>
-            </div>
-          </div>
+
+        <!-- CONTACT -->
+        <div id="contact" class="wrapper_small">
+
+            <h2 class="text-center">CONTACT ME</h2>
+
+
+                <!-- <div class="row"> -->
+                <div class="row">
+                  <div class="col-xs-offfset-1 col-xs-10 col-offset-sm-2 col-sm-8 col-offset-md-2 col-md-8">
+
+                    <!-- BOOTSTRAP test form  -->
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" id="exampleInputFile">
+                        <p class="help-block">Example block-level help text here.</p>
+                      </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <!-- /BOOTSTRAP test   -->
+
+                  </div>
+                </div>
+                <!-- /row -->
+              <!-- </div> -->
+              <!-- /row -->
+
         </div>
+        <!-- /CONTACT -->
       </div>
       <!-- /wrap contact -->
 
@@ -134,14 +192,15 @@
     </main>
   <!-- /main -->
 
-  <footer>
+  <footer class="text-center">
+
     <div class="wrap-foot-main">
       <div id="menu-foot"class="container">
         <!-- footer-menu -->
-        <div class="row txt-center">
-          <div class="col-xs-12 col-sm-4 col-md-4"><p class="col_white">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p></div>
-          <div class="col-xs-12 col-sm-4 col-md-4"> <h3 class="col_white">AROUND THE WEB</h4>  </div>
-          <div class="col-xs-12 col-sm-4 col-md-4"><p class="col_white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p></div>
+        <div class="row">
+          <div class="col-xs-12 col-md-4"><p class="col_white">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p></div>
+          <div class="col-xs-12 col-md-4"> <h3 class="col_white">AROUND THE WEB</h4> </div>
+          <div class="col-xs-12 col-md-4"><p class="col_white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p></div>
         </div>
       </div>
     </div>
@@ -160,6 +219,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
+</main>
 
 </body>
 
