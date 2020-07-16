@@ -137,6 +137,18 @@ footer {
   width: 240px;
 }
 
+#jumbo_star {
+  height: 50px;
+}
+
+.linea_sx, .linea_dx {
+  width: 50px;
+  height: 2px;
+  background-color: white;
+  display: inline-block;
+}
+
+
 /* .jumbo-text {
   max-width: 900px;
   padding: 0 15px;
