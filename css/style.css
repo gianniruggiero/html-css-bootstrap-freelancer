@@ -4,10 +4,24 @@
   color: white;
 }
 
+.col_green_jumbo {
+  color: #1abc9c;
+}
+
+.bgc_green_jumbo {
+  color: #1abc9c;
+}
 .p_top_80 {
   padding-top: 80px;
 }
 
+.pd_14 {
+  padding: 14px;
+}
+
+.p_right_20 {
+  padding-right: 20px;
+}
 .p_btm_80 {
   padding-bottom: 80px;
 }
@@ -22,12 +36,27 @@
   background-color: #2c3e50;
 }
 
+.no-dec {
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  top: 70px;
+  font-family: 'Lato', sans-serif;
+}
+
 /* HEADER */
 
-.header-top {
+header {
+  background-color: #2c3e50;
   width: 100%;
-  height: 70px;
-  line-height: 70px;
+}
+
+.header_top {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
   background-color: #2c3e50;
   position: fixed;
   z-index: 1;
@@ -35,14 +64,19 @@
   left: 0;
 }
 
-header {
-  background-color: #2c3e50;
-  width: 100%;
+.ul-mainmenu li a:hover {
+  color: #1abc9c;
+  text-decoration: none;
 }
 
-body {
-  position: relative;
-  top: 70px;
+.fs_menu {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#logo_start_bootstrap {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 footer {
@@ -156,4 +190,27 @@ footer {
 #menu-copy {
   height: 100px;
   background-color: #2c3e50;
+}
+
+@media screen and (max-width: 991px) {
+  .header_top {
+    height: 75px;
+    line-height: 75px;
+  }
+
+  #logo_start_bootstrap {
+   font-size: 1.90rem;
+  }
+}
+
+
+@media screen and (max-width: 310px) {
+  .header_top {
+    height: 120px;
+    line-height: 40px;
+  }
+
+  #logo_start_bootstrap {
+   font-size: 1.90rem;
+  }
 }
