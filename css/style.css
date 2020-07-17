@@ -146,6 +146,10 @@ h2 {
   font-weight: 900;
 }
 
+footer h3 {
+  font-weight: 900;
+}
+
 /* HEADER */
 
 header {
@@ -369,14 +373,16 @@ footer {
   color: white;
 }
 
+/* FOOTER */
+
 .wrap-foot-main {
   background-color: #3a546d;
   width: 100%;
 }
 
 #menu-foot {
-  height: 200px;
   background-color: #3a546d;
+  padding-bottom: 50px;
 }
 
 .wrap-foot-copy {
@@ -385,8 +391,39 @@ footer {
 }
 
 #menu-copy {
-  height: 100px;
+  height: 70px;
+  line-height: 70px;
   background-color: #2c3e50;
+}
+
+.nav_social i {
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.nav_social i {
+  font-size: 20px;
+}
+
+.box_social {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid white;
+  line-height: 48px;
+}
+
+#menu-foot p {
+  font-size: 20px;
+}
+
+#menu-foot h3 {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.nav_social a {
+  /* border: 2px solid red; */
 }
 
 @media screen and (max-width: 991px) {
