@@ -251,10 +251,11 @@ footer h3 {
   width: 100%;
 }
 
-/* STELLA del Jumbotron */
+/* STELLA e decorazione del titolo sezione */
 
 .star_set {
-  margin: 0 15px;
+  margin: 15px 0;
+  font-size: 35px;
 }
 
 .star_set i {
@@ -273,27 +274,12 @@ footer h3 {
   border-radius: 3px;
 }
 
-
-/* STELLA soluzione con div nel jumbotron */
-
-#jumbo_star {
-  font-size: 40px;
-  font-weight: bold;
-  vertical-align: middle;
-  padding: 15px;
+.star_set.star_set_dark i {
+  color: #2C3E50;
 }
-
-.linea_star {
-  width: 100px;
-  /* margin: 10px; */
-  height: 4px;
-  /* background-color: white; */
-  display: inline-block;
-  vertical-align: middle;
+.star_set.star_set_dark::before, .star_set.star_set_dark::after {
+  background-color: #2C3E50;
 }
-
-/* /STELLA soluzione con div nel jumbotron */
-
 
 /* PORTFOLIO */
 
@@ -307,7 +293,6 @@ footer h3 {
   background-color: #fff;
 }
 
-
 /* set contenitore immagine & overlayer */
 .box_img img {
   width: 100%;
@@ -320,7 +305,7 @@ footer h3 {
   overflow: hidden;
 }
 
-/* set e posizionamento icona segno più */
+/* set e posizionamento icona segno più al centro dell'immagine*/
 .plus_ico {
   font-size: 70px;
   position: absolute;
@@ -329,6 +314,7 @@ footer h3 {
   transform: translate(-50%, -50%);
 }
 
+/* layer in trasparenza sull'immagine*/
 .overlayer {
   width: 100%;
   height: 100%;
@@ -339,13 +325,13 @@ footer h3 {
   display: none;
 }
 
+
 .box_img:hover .overlayer {
   display: block;
+  cursor: pointer;
 }
 
-
 /* ABOUT */
-
 .wrap-about {
   background-color: #1abc9c;
   width: 100%;
