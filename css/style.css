@@ -136,13 +136,13 @@ body {
   font-size: 20px;
 }
 
-.font_title {
+.h1_title {
   font-size: 6.2rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 4.5rem;
+  font-size: 55px;
   font-weight: 900;
 }
 
@@ -151,11 +151,6 @@ footer h3 {
 }
 
 /* HEADER */
-
-header {
-  /* background-color: #2c3e50; */
-  width: 100%;
-}
 
 .header_top {
   width: 100%;
@@ -166,14 +161,17 @@ header {
   z-index: 1;
   top: 0;
   left: 0;
+  font-family: 'Montserrat', sans-serif;
 }
+
+/* button menu hamburger */
 
 #btn_menu {
   height: 45px;
   border-radius: 8px;
   font-size: 13px;
   font-weight: 700;
-  font-family: 'Lato', sans-serif
+  font-family: 'Lato', sans-serif;
 }
 
 #btn_menu:hover {
@@ -181,6 +179,7 @@ header {
   color: white;
 }
 
+/* nav menu DX - Header Top */
 .ul-mainmenu li a:hover {
   color: #1abc9c;
   text-decoration: none;
@@ -191,6 +190,7 @@ header {
   font-weight: bold;
 }
 
+/* set logo scritta START BOOTSTRAP */
 #logo_start_bootstrap {
   font-size: 2.5rem;
   font-weight: bold;
@@ -198,16 +198,9 @@ header {
   text-decoration: none;
 }
 
-
-
-footer {
-  /* background-color: #3a546d; */
-  /* height: 350px; */
-  top: 105px;
-}
-
 /* JUMBOTRON */
 
+/* wrapper Jumbotron */
 .wrap-jumbo {
   background-color: #1abc9c;
   width: 100%;
@@ -225,13 +218,59 @@ footer {
 }
 
 #jumbo_ico {
-  width: 240px;
+  max-width: 240px;
 }
 
 .jumbo_graph {
   width: 400px;
   display: inline-block;
 }
+
+
+
+
+.box_portfolio {
+  position: relative;
+  overflow: hidden;
+}
+
+.box_profolio img {
+  width: 100%
+}
+
+.overlay {
+  top: 0;
+  left:0;
+  position: absolute;
+  background-color: red;
+  height: 100%;
+  width: 100%;
+}
+
+/* STELLA del Jumbotron */
+
+.set_star {
+  margin: 0 15px;
+}
+
+.star_set i {
+  font-size: 35px;
+  margin: 0 5px;
+  color: #fff;
+}
+
+.star_set::before, .set_star::after {
+  content:"";
+  display: inline-block;
+  height: 3px;
+  width: 100px;
+  background-color: #fff;
+  vertical-align: super;
+  border-radius: 3px;
+}
+
+
+/* STELLA soluzione con div nel jumbotron */
 
 #jumbo_star {
   font-size: 40px;
@@ -249,12 +288,8 @@ footer {
   vertical-align: middle;
 }
 
-/* .jumbo-text {
-  max-width: 900px;
-  padding: 0 15px;
-  margin: auto;
-  text-align: center;
-} */
+/* /STELLA soluzione con div nel jumbotron */
+
 
 /* PORTFOLIO */
 
@@ -398,7 +433,7 @@ footer {
 
 .nav_social i {
   font-size: 20px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .nav_social i {
@@ -426,24 +461,33 @@ footer {
   /* border: 2px solid red; */
 }
 
+
+/*  MEDIA QUERY  */
+/* fino a 991 px */
 @media screen and (max-width: 991px) {
+
+  /* diminuisce altezza header top */
   .header_top {
-    height: 75px;
-    line-height: 75px;
+    height: 80px;
+    line-height: 80px;
   }
 
+  /* adeguamento per fixed header top */
+  body {
+    top: 80px;
+  }
+
+  /* diminuisce font logo START BOOTSTRAP */
   #logo_start_bootstrap {
    font-size: 1.90rem;
   }
 
-  body {
-    top: 75px;
-  }
-
-  .font_title {
+  /* diminuisce font H1 */
+  .h1_title {
     font-size: 4.0rem;
   }
 
+  /* diminuisce sottotitolo Jumbotron */
   .banner-jumbo h3 {
     font-size: 2.0rem;
   }
@@ -466,24 +510,18 @@ footer {
 }
 
 
-
-@media screen and (max-width: 375px) {
+/*  MEDIA QUERY  */
+/* fino a 375 px */
+/* collasso elementi header top */
+@media screen and (max-width: 370px) {
 
   .header_top {
-    height: 145px;
-    line-height: 40px;
+    line-height: 30px;
   }
 
-  body {
-    /* top: 145px; */
-  }
-
-  .hamburger {
-    text-align: center;
-  }
-
+  /* diminuisce dimensioni txt logo */
   #logo_start_bootstrap {
-   font-size: 1.90rem;
+   font-size: 1.5rem;
   }
 
 }

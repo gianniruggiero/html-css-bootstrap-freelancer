@@ -11,11 +11,15 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 
+    <!-- google fonts LATO     -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <!-- google fonts MONTSERRAT     -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
     <title>Start Bootstrap</title>
     <!-- Bootstrap -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- STYLE.CSS -->
      <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -26,12 +30,13 @@
       <nav class="header_top pdl_10 pdr_10">
         <!-- container BOOTSTRAP -->
         <div class="container">
+          <!-- row BOOTSRAP   -->
           <div class="row">
             <div class="col-xs-8 col-sm-6 col-md-6 col_white">
               <a id="logo_start_bootstrap" href="#">START BOOTSTRAP</a>
             </div>
             <div class="col-xs-4 col-sm-6 col-md-6 text-right col_white">
-              <!-- nav menu -->
+              <!-- nav menu DX -->
               <nav class="visible-md visible-lg">
                 <ul class="ul-mainmenu mb_0 list-unstyled list-inline">
                   <li><a class="col_white text-uppercase fs_menu pd_14" href="#">portfolio</a></li>
@@ -39,8 +44,8 @@
                   <li><a class="col_white text-uppercase fs_menu pd_14" href="#">contact</a></li>
                 </ul>
               </nav>
-              <!-- /nav menu -->
-              <!-- icona hamburger menu -->
+              <!-- /nav menu DX -->
+              <!-- icona hamburger menu di BOOTSTRAP-->
               <div class="hamburger visible-xs visible-sm">
                 <button id="btn_menu" type="button" class="btn bgc_green_jumbo pd_14">MENU
                   <span id="ico-hamburger"class="fs_11 glyphicon glyphicon-menu-hamburger"></span>
@@ -48,32 +53,41 @@
               </div>
               <!-- /icona hamburger menu -->
           </div>
-          <!-- /row     -->
+          <!-- /row BOOTSTRAP     -->
         </div>
         <!-- container BOOTSTRAP -->
       </nav>
       <!-- /nav header top -->
 
-      <!-- JUMBOTRON -->
+      <!-- sezione JUMBOTRON -->
       <!-- wrap jumbotron -->
       <section class="wrap-jumbo">
         <div class="banner-jumbo pd_top_100 pd_btm_80">
           <!-- immagine del banner-jumbo -->
-          <img id="jumbo_ico" class="mb_25" src="img/avataaars.svg" alt="Avatar">
+          <img id="jumbo_ico" class="mb_25" src="img/avataaars.svg" alt="Avatar uomo">
           <!-- /immagine del banner-jumbo -->
-          <h1 class="font_title col_white">START BOOTSTRAP</h1>
-          <!-- wrapper linee e stella -->
-          <div class="jumbo_graph">
-            <div class="linea_star bgc_white"></div>
-            <span id="jumbo_star" class="col_white glyphicon glyphicon-star"></span>
-            <div class="linea_star bgc_white"></div>
+          <h1 class="h1_title col_white">START BOOTSTRAP</h1>
+
+          <!-- stella con Font Awesome  -->
+          <!-- righe bianche vengono scritte con ::before e ::after dal css -->
+          <div class="set_star">
+            <i class="fas fa-star"></i>
           </div>
+
+          <!-- ALTRA SOLUZIONE x STELLA & LINEE -->
+          <!-- wrapper linee e stella -->
+          <!-- <div class="jumbo_graph">
+            <div class="linea_star bgc_white"></div>
+                        <span id="jumbo_star" class="col_white glyphicon glyphicon-star"></span>
+            <div class="linea_star bgc_white"></div>
+          </div> -->
           <!-- /wrapper linee e stella -->
+          <!-- /ALTRA SOLUZIONE -->
+
           <h3 class="col_white">Graphic Artist - Web Designer - Illustrator</h3>
         </div>
       </section>
       <!-- /wrap jumbotron -->
-
     </header>
     <!-- /header -->
 
@@ -87,10 +101,11 @@
         <div id="portfolio" class="text-center mt_60 mb_80 container">
           <!-- row -->
           <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="text-center col-xs-12 col-sm-12 col-md-12">
               <!-- titolo   -->
-              <h2 class="text-center">PORTFOLIO</h2>
+              <h2>PORTFOLIO</h2>
               <!-- /titolo   -->
+
               <!-- wrapper linee e stella -->
               <div class="jumbo_graph">
                 <div class="linea_star bgc_black"></div>
@@ -115,7 +130,22 @@
               </div> -->
               <!-- /TEST PER OVERLAY CON SEGNO  -->
 
+
+
             </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="box_portfolio">
+                <div class="overlay"></div>
+                <a href="#"><img class="box_img" src="img/cake.png" alt="Cake"></a>
+              </div>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <a href="#"><img class="box_img" src="img/cake.png" alt="Cake"></a>
+            </div>
+
 
             <div class="col-xs-12 col-sm-6 col-md-4">
               <a href="#"><img class="box_img" src="img/cake.png" alt="Cake"></a>
