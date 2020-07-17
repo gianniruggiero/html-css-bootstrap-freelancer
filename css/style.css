@@ -352,11 +352,21 @@ footer {
 .wrap-contact {
   background-color: #fff;
   width: 100%;
-  height: 400px;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
 #contact {
   background-color: #fff;
+}
+
+.btn_send {
+  padding: 16px 20px;
+}
+
+.btn_send:hover {
+  background-color: #148f77;
+  color: white;
 }
 
 .wrap-foot-main {
@@ -407,6 +417,14 @@ footer {
     margin-right: 10px;
   }
 
+  #contact {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #contact h2 {
+    font-size: 3.4rem;
+  }
 
 }
 
