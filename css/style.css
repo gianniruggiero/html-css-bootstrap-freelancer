@@ -293,6 +293,10 @@ footer h3 {
   background-color: #fff;
 }
 
+#portfolio h2 {
+  color: #2C3E50;
+}
+
 /* set contenitore immagine & overlayer */
 .box_img img {
   width: 100%;
@@ -377,6 +381,10 @@ footer h3 {
   background-color: #fff;
 }
 
+#contact h2 {
+  color: #2C3E50;
+}
+
 .btn_send {
   padding: 16px 20px;
 }
@@ -395,7 +403,7 @@ footer h3 {
 
 #menu-foot {
   background-color: #3a546d;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 
 .wrap-foot-copy {
@@ -411,14 +419,10 @@ footer h3 {
 
 .nav_social i {
   font-size: 20px;
-  /* border-radius: 50%; */
 }
 
-.nav_social i {
-  font-size: 20px;
-}
-
-.box_social {
+.nav_social a {
+  display: inline-block;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -435,13 +439,7 @@ footer h3 {
   margin-bottom: 20px;
 }
 
-.nav_social a {
-  /* border: 2px solid red; */
-}
-
-
-/*  MEDIA QUERY  */
-/* fino a 991 px */
+/*  MEDIA QUERY fino a 991 px */
 @media screen and (max-width: 991px) {
 
   /* diminuisce altezza header top */
@@ -484,12 +482,10 @@ footer h3 {
   #contact h2 {
     font-size: 3.4rem;
   }
-
 }
 
 
-/*  MEDIA QUERY  */
-/* fino a 375 px */
+/*  MEDIA QUERY  fino a 375 px */
 /* collasso elementi header top */
 @media screen and (max-width: 370px) {
 
