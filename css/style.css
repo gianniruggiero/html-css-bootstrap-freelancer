@@ -32,6 +32,10 @@
   margin-top: 40px;
 }
 
+.mt_20  {
+  margin-top: 40px;
+}
+
 .mt_60  {
   margin-top: 60px;
 }
@@ -64,6 +68,14 @@
 
 .col_green_jumbo {
   color: #1abc9c;
+}
+
+.col_red {
+  color: red;
+}
+
+.col_red_nvalid {
+  color: #dc3545;
 }
 
 .bgc_green_jumbo {
@@ -130,6 +142,10 @@ body {
 
 .fs_11 {
   font-size: 11px;
+}
+
+.fs_18 {
+  font-size: 18px;
 }
 
 .fs_40 {
@@ -346,8 +362,8 @@ footer h3 {
   /* padding: 100px; */
 }
 
-#ab35t {
-  ba40ground-color: #1abc9c;
+#about {
+  background-color: #1abc9c;
 }
 
 .btn_download {
@@ -385,8 +401,52 @@ footer h3 {
   color: #2C3E50;
 }
 
+.form-control {
+  border:none;
+}
+
+.form-group label {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 31px;
+  font-weight: 500;
+}
+
+.form-group [class*="col-"]:focus-within label {
+  display: block;
+}
+
+#form_name, #form_email, #form_phone, #form_number, #form_textarea {
+  font-size: 24px;
+  box-shadow: none;
+  color: #2C3E50;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.form-group {
+  /* border-bottom: 1px solid lightgrey; */
+}
+
+#form_textarea {
+  resize: none;
+  padding-top: 25px;
+  rows: 6;
+}
+
+.form-control::placeholder {
+  color: #666666;
+  opacity: 1; /* Firefox */
+}
+
 .btn_send {
   padding: 16px 20px;
+  margin-top: 40px;
+  font-size: 20px;
+  padding: 17px 27px;
+  border-radius: 5px;
 }
 
 .btn_send:hover {
@@ -415,6 +475,7 @@ footer h3 {
   height: 70px;
   line-height: 70px;
   background-color: #2c3e50;
+  font-size: 12px;
 }
 
 .nav_social i {
@@ -423,11 +484,27 @@ footer h3 {
 
 .nav_social a {
   display: inline-block;
-  width: 45px;
-  height: 45px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   border: 2px solid white;
-  line-height: 48px;
+  line-height: 52px;
+}
+
+.nav_social ul {
+  margin-left: 0;
+}
+
+.nav_social a:hover {
+  background-color: white;
+}
+
+.nav_social a:hover i {
+  color: #212529;
+}
+
+.nav_social li {
+  padding: 0 4px;
 }
 
 #menu-foot p {
@@ -435,8 +512,11 @@ footer h3 {
 }
 
 #menu-foot h3 {
+  font-size: 24px;
+  font-weight: 700;
   margin-top: 80px;
   margin-bottom: 20px;
+ font-family: 'Montserrat', sans-serif;
 }
 
 /*  MEDIA QUERY fino a 991 px */
